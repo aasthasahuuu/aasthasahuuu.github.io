@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Aastha Sahu</title>
+<link rel="icon" href="https://github.com/aasthasahuuu.png">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -63,16 +64,42 @@ body::before {
 
 .main-text { max-width: 100%; }
 
-h1 {
-  font-size: clamp(2.2rem, 11vw, 4rem);
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 4vw, 24px);
+  text-align: left;
+}
+
+.pfp {
+  width: clamp(72px, 22vw, 120px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--accent);
+  background: #d9bfa0;
+}
+
+.name {
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  font-weight: 800;
   margin: 0;
   line-height: 1.1;
   overflow-wrap: break-word;
 }
 
+.handle {
+  margin: 4px 0 0;
+  color: var(--accent);
+  opacity: 0.75;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
+}
+
 h3 {
   font-weight: normal;
-  margin: 10px 0 20px;
+  margin: 20px 0 20px;
   font-size: clamp(1rem, 4.5vw, 1.5rem);
   line-height: 1.35;
 }
@@ -94,7 +121,13 @@ a {
   <div style="background: #f1e3d0;"></div>
 </div>
 <div class="main-text">
-  <h1>Aastha Sahu</h1>
+  <header class="profile">
+    <img class="pfp" src="https://github.com/aasthasahuuu.png" alt="Aastha's profile picture">
+    <div>
+      <h1 class="name">Aastha Sahu</h1>
+      <p class="handle">aasthasahuuu · she/her</p>
+    </div>
+  </header>
   <h3>Hieee!! I'm learning coding as hobby</h3>
   <a href="https://github.com/aasthasahuuu">GitHub</a>
 </div>
